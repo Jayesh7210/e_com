@@ -1,0 +1,27 @@
+data mapping
+
+
+function App() {
+  const data = ["full stack ", "front end", "back end", "devops", "data science", "machine learning", "AI", "cloud computing"];
+
+
+  return (
+    <div>
+      {data.map((elem,index)=>( <div className="bg-black dark:text-white p-4 m-2 rounded-lg shadow-md">
+        {elem}
+      </div>
+      ))}
+
+      <div>heheh</div>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
