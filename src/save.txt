@@ -25,3 +25,163 @@ export default App;
 
 
 
+
+/src
+ ├── /components
+ │    └── Navbar.jsx, Footer.jsx, ProductCard.jsx, etc.
+ ├── /pages
+ │    └── Home.jsx, Shop.jsx, ProductDetail.jsx, BeDesigner.jsx
+ ├── /layouts
+ ├── /hooks
+ ├── /api
+ ├── /assets
+ └── App.jsx, index.css
+
+
+tshirt-store/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/               # Images, logos, icons, design previews
+│   ├── components/           # Reusable components (Navbar, Footer, etc.)
+│   ├── layouts/              # Page layouts (MainLayout, SellerLayout)
+│   ├── pages/                # Route-level pages (Home, Shop, Product, Designer)
+│   ├── features/             # Feature-specific folders (product, auth, cart)
+│   ├── hooks/                # Custom React hooks
+│   ├── utils/                # Utility functions (formatting, validators)
+│   ├── constants/            # Reusable constants (categories, sizes, colors)
+│   ├── services/             # API functions (getProducts, loginUser)
+│   ├── store/                # Global state (Redux / Context API)
+│   ├── App.jsx
+│   ├── main.jsx              # Entry point for Vite
+│   └── index.css             # TailwindCSS and global styles
+├── .env                     # Environment variables
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── README.md
+
+
+
+
+
+
+
+components/
+├── Navbar.jsx
+├── Footer.jsx
+├── ProductCard.jsx
+├── DesignerCard.jsx
+├── CategoryGrid.jsx
+├── HeroSection.jsx
+└── Button.jsx
+
+
+
+
+
+
+pages/
+├── LandingPage.jsx
+├── Shop.jsx
+├── ProductDetail.jsx
+├── Cart.jsx
+├── Checkout.jsx
+├── BeADesigner.jsx
+├── SellerDashboard.jsx
+└── LoginRegister.jsx
+
+
+
+
+
+
+features/
+├── product/
+│   ├── ProductList.jsx
+│   ├── productSlice.js
+│   └── productService.js
+├── cart/
+│   ├── CartSlice.js
+│   └── CartDrawer.jsx
+├── auth/
+│   ├── LoginForm.jsx
+│   ├── RegisterForm.jsx
+│   └── authSlice.js
+└── designer/
+    ├── UploadDesign.jsx
+    └── DesignerEarnings.jsx
+
+
+
+
+
+
+
+services/
+├── api.js              # Axios setup
+├── authService.js
+├── productService.js
+├── designerService.js
+└── sellerService.js
+
+
+
+
+layouts/
+├── MainLayout.jsx        # For public pages (Home, Shop)
+├── SellerLayout.jsx      # For seller dashboard
+└── DesignerLayout.jsx    # For designer dashboard
+
+
+
+
+
+store/
+├── store.js              # Redux store setup
+├── rootReducer.js
+├── authSlice.js
+└── cartSlice.js
+
+
+
+
+
+utils/
+├── formatCurrency.js
+├── validateEmail.js
+└── uploadImageToCloudinary.js
+
+
+
+
+
+constants/
+├── categories.js
+├── sizes.js
+├── colors.js
+└── userRoles.js
+
+
+
+
+
+
+hooks/
+├── useAuth.js
+├── useCart.js
+└── useSeller.js
+
+
+
+
+
+
+backend/
+├── controllers/
+├── routes/
+├── models/
+├── middleware/
+├── config/
+├── uploads/
+└── server.js
